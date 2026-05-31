@@ -846,4 +846,35 @@
     .nav-links { display: none; }
     .achievement-card { flex-direction: column; text-align: center; }
     .footer-content { flex-direction: column; text-align: center; }
+    
+    /* Typography adjustments */
+    .hero-text h1 { font-size: 2.5rem; }
+    .hero-text h2 { font-size: 1.4rem; }
+    .section-title { font-size: 2rem; }
+    
+    /* Prevent typing animation overflow on mobile */
+    .typing-text {
+      white-space: normal;
+      border-right: none;
+      width: auto;
+      animation: none !important;
+      display: block;
+    }
+    
+    /* Image sizing */
+    .hero-image-container { max-width: 280px; }
+    
+    /* Disable custom cursor for touch screens */
+    .cursor-dot, .cursor-outline { display: none !important; }
+    
+    /* Preloader sizing */
+    .preloader-content h2 { font-size: 1.5rem; }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-text h1 { font-size: 2.2rem; }
+    .hero-cta { flex-direction: column; width: 100%; gap: 1rem; }
+    .hero-cta .btn { width: 100%; }
+    .gallery-image { height: 180px; }
+    .about-card { padding: 1.5rem; }
   }
